@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        /* General styles */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Top object */
+        #top {
+            width: 20%;
+            height: 80%;
+            background-color: lightblue;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Center object */
+        #center {
+            width: 40%;
+            height: 60%;
+            background-color: lightgreen;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Buttons */
+        #buttons {
+            width: 10%;
+            height: 40%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            flex-direction: column;
+        }
+
+        button {
+            width: 80%;
+            height: 40%;
+            background-color: lightpink;
+        }
+
+        /* Footer */
+        #footer {
+            width: 20%;
+            height: 10%;
+            background-color: lightyellow;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* Media query for screens that are 600px or less */
+        @media (max-width: 600px) {
+            /* Top object */
+            #top {
+                width: 15%;
+                height: 100%;
+                font-size: 0.8em;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            /* Center object */
+            #center {
+                width: 50%;
+                height: 100%;
+                font-size: 0.8em;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            /* Buttons */
+            #buttons {
+                width: 15%;
+                height: 50%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                flex-direction: row;
+            }
+
+            button {
+                width: 40%;
+                height: 80%;
+                margin-right: 5%;
+            }
+
+            /* Footer */
+            #footer {
+                width: 15%;
+                height: 10%;
+                font-size: 0.8em;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+        }
+    </style>
+    <!-- Set the viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="writing-mode: vertical-lr;">
+    <!-- This is the top object -->
+    <div id="top">
+        <h1>Welcome to my website</h1>
+    </div>
+
+    <!-- This is the central object -->
+    <div id="center">
+        <p>This is some content for the central object.</p>
+    </div>
+
+    <!-- These are the two buttons -->
+    <div id="buttons">
+        <button>Button 1</button>
+        <button>Button 2</button>
+    </div>
+
+    <!-- This is the footer -->
+    <div id="footer">
+        <p>© 2023 My Website. All rights reserved.</p>
+    </div>
+</body>
+</html>
